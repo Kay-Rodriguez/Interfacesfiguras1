@@ -1,5 +1,15 @@
+import javax.swing.*;
+import java.awt.*;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        JFrame frame = new JFrame("Aplicacion para calcular areas y perimetros");
+        frame.setContentPane(new Calculadora().mainPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(600, 600);
+        frame.setPreferredSize(new Dimension(600, 600));
+        frame.pack();
+        frame.setVisible(true);
+
     }
 }
